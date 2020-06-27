@@ -22,7 +22,7 @@ see [Wikipedia](https://en.wikipedia.org/wiki/Seam_carving)
 
 ## Introduction of my project
 
-## Data picture
+### Data picture
 >In this project, I use the picture "penguins.jpg", which you can download from this project's Github page.
 
 ### Find the seam
@@ -34,7 +34,7 @@ M(i, j)= E(i, j) + min(M(i −1, j −1),M(i −1, j),M(i −1, j +1))
 >>>>>The fifth step is to backtrack the lowest-energy pixel of each row
 >>>>>>The last step is to set the pixels which we backtracked in the last step into red.
 
-###Delete the seam 
+### Delete the seam 
 >This part of code was written in the file name  **"delete_line_ntimes.m"**
 >>Based on the previous code, I have the seam at the moment. That is, cascade all the pixels except the pixels that are the lowest-energy pixel of each row.   
 
