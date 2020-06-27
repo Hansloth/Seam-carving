@@ -1,6 +1,6 @@
 # Seam Carving
 
-----
+
 ## what is seam carving?
 see [Wikipedia](https://en.wikipedia.org/wiki/Seam_carving)
 
