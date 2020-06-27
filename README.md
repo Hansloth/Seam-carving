@@ -21,9 +21,9 @@ see [Wikipedia](https://en.wikipedia.org/wiki/Seam_carving)
 
 ## Introduction of my code
 
-### Data picture
+>### Data picture
 In this project, I use the picture penguins, which you can download from this project's Github page."penguins.jpg"
 
-### Find the seam
+>### Find the seam
 
 
