@@ -55,14 +55,18 @@ see [What is forward energy seam carving?](https://avikdas.com/2019/07/29/improv
 >>>>>>The last step is to set the pixels which we find was the smallest in the row, in the last step, into red and delete it.
 
 ### Delete the seam N times horizontally and vertically (backward energy calculation)
->This part of code was written in the file name  **"delete_line_VH.m"**
+>This part of code was written in the file name  **"delete_line_VH.m"**.
 In this section seam are calculated and deleted horizontally and vertically
 
 ### Preserve part of the image while seam carving (backward energy calculation)
+>This part of code was written in the file name  **"delete_line_preserve.m"**.
 
 ### Reserve part of the image while seam carving (backward energy calculation)
+>This part of code was written in the file name  **"delete_line_reserve.m"**.
 
 ### Reserve part of the image completely while seam carving (backward energy calculation)
+>This part of code was written in the file name  **"delete_line_complete_reserve.m"**.
+
 
 
 
