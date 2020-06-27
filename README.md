@@ -47,9 +47,11 @@ see [What is forward energy seam carving?](https://avikdas.com/2019/07/29/improv
 >>>>Thirdly, I use forward energy method to calculate the picture's gradient magnitude.
 CL(x,y)CU(x,y)CR(x,y)=D[(x−1,y),(x+1,y)]+D[(x,y−1),(x−1,y)]=D[(x−1,y),(x+1,y)]=D[(x−1,y),(x+1,y)]+D[(x,y−1),(x+1,y)]
 >>>>>The fifth step is to find(forward energy calculation) the lowest-energy pixel of each row
->>>>>>The last step is to set the pixels which we backtracked in the last step into red and delete it.
+>>>>>>The last step is to set the pixels which we find was the smallest in the row, in the last step, into red and delete it.
 
 ### Delete the seam N times horizontally and vertically (backward energy calculation)
+>This part of code was written in the file name  **"delete_line_VH.m"**
+In this section seam are calculated and deleted horizontally and vertically
 
 ### Preserve part of the image while seam carving (backward energy calculation)
 
