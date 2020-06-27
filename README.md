@@ -34,7 +34,9 @@ see [Wikipedia](https://en.wikipedia.org/wiki/Seam_carving)
 >>Based on the procedure of seam carving mentioned above. First I start with the picture "penguins.jpg".
 >>>Secondly, I use gradient magnitude to calculate the energy of the picture.
 >>>>Thirdly, I have to find out the recursion relation of the picture's gradient magnitude.
-M(i, j)= E(i, j) + min(M(i −1, j −1),M(i −1, j),M(i −1, j +1))
+>>>>
+>>>>M(i, j)= E(i, j) + min(M(i −1, j −1),M(i −1, j),M(i −1, j +1))
+>>>>
 >>>>>The fifth step is to backtrack(backward energy calculation) the lowest-energy pixel of each row
 >>>>>>The last step is to set the pixels which we backtracked in the last step into red.
 
