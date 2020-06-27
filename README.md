@@ -63,22 +63,29 @@ In this section seam are calculated and deleted horizontally and vertically
 >>First I start with the picture "penguins.jpg".
 >>>Secondly, I use gradient magnitude to calculate the energy of the picture.
 >>>>Thirdly, I select a part of the picture to preserve. Later on set that portion's gradient magnitude energy **very high**.
->>>>The forth step, I use forward energy method to calculate the picture's gradient magnitude.
->>>>>The forth step is to find(forward energy calculation) the lowest-energy pixel of each row.
+>>>>The forth step, I use backward energy method to calculate the picture's gradient magnitude.
+>>>>>The forth step is to find(backward energy calculation) the lowest-energy pixel of each row.
 >>>>>>The last step is to set the pixels which we find was the smallest in the row into red and delete it.
 
 ### Reserve part of the image while seam carving (backward energy calculation)
 >This part of code was written in the file name  **"delete_line_reserve.m"**.
->This part of code was written in the file name  **"delete_line_preserve.m"**.
 >>First I start with the picture "penguins.jpg".
 >>>Secondly, I use gradient magnitude to calculate the energy of the picture.
 >>>>Thirdly, I select a part of the picture to preserve. Later on set that portion's gradient magnitude energy **very low**.
->>>>The forth step, I use forward energy method to calculate the picture's gradient magnitude.
+>>>>The forth step, I use backward energy method to calculate the picture's gradient magnitude.
 >>>>>The forth step is to find(forward energy calculation) the lowest-energy pixel of each row.
 >>>>>>The last step is to set the pixels which we find was the smallest in the row into red and delete it.
 
 ### Reserve part of the image completely while seam carving (backward energy calculation)
 >This part of code was written in the file name  **"delete_line_complete_reserve.m"**.
+>>First I start with the picture "penguins.jpg".
+>>>Secondly, I use gradient magnitude to calculate the energy of the picture.
+>>>>Thirdly, I select a part of the picture to preserve. Later on set that portion's gradient magnitude energy **very low**.At the same time count the width of the selected part since the width is the times that seams have to be find and delete from the picture.
+>>>>The forth step, I use backward energy method to calculate the picture's gradient magnitude.
+>>>>>The fifth step is to find(forward energy calculation) the lowest-energy pixel of each row.
+>>>>>>The sixth step is to set the pixels which we find was the smallest in the row into red and delete it.
+>>>>>>>The last step is to repete the above steps untill the selected part was deleted completely.
+
 
 
 
