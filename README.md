@@ -23,6 +23,9 @@ see [Wikipedia](https://en.wikipedia.org/wiki/Seam_carving)
 
 ## Introduction of my project
 
+### Abstract
+>This project was coded on Matlab. 
+
 ### Data picture
 >In this project, I use the picture "penguins.jpg", which you can download from this project's Github page.
 
