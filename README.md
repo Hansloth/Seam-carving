@@ -26,13 +26,13 @@ see [Wikipedia](https://en.wikipedia.org/wiki/Seam_carving)
 ### Data picture
 >In this project, I use the picture "penguins.jpg", which you can download from this project's Github page.
 
-### Find the seam
+### Find the seam (backward energy calculation)
 >This part of code was written in the file named **"find_delete_line.m"**
 >>Based on the procedure of seam carving mentioned above. First I start with an picture "penguins.jpg".
 >>>Secondly, I use gradient magnitude to calculate the energy of the picture.
 >>>>Thirdly, I have to find out the recursion relation of the picture's gradient magnitude.
 M(i, j)= E(i, j) + min(M(i −1, j −1),M(i −1, j),M(i −1, j +1))
->>>>>The fifth step is to backtrack the lowest-energy pixel of each row
+>>>>>The fifth step is to backtrack(backward energy calculation) the lowest-energy pixel of each row
 >>>>>>The last step is to set the pixels which we backtracked in the last step into red.
 
 ### Delete the seam n times (backward energy calculation)
@@ -41,13 +41,13 @@ M(i, j)= E(i, j) + min(M(i −1, j −1),M(i −1, j),M(i −1, j +1))
 
 ### Delete the seam N times (forward energy calculation)
 
-### Delete the seam N times horizontally and vertically (forward energy calculation) 
+### Delete the seam N times horizontally and vertically (backward energy calculation)
 
-### Preserve part of the image while seam carving (forward energy calculation)
+### Preserve part of the image while seam carving (backward energy calculation)
 
-### Reserve part of the image while seam carving (forward energy calculation)
+### Reserve part of the image while seam carving (backward energy calculation)
 
-### Reserve one part completely while seam carving (forward energy calculation)
+### Reserve one part completely while seam carving (backward energy calculation)
 
 
 
