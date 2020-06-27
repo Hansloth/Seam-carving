@@ -35,9 +35,21 @@ M(i, j)= E(i, j) + min(M(i −1, j −1),M(i −1, j),M(i −1, j +1))
 >>>>>The fifth step is to backtrack the lowest-energy pixel of each row
 >>>>>>The last step is to set the pixels which we backtracked in the last step into red.
 
-### Delete the seam 
+### Delete the seam n times (backward energy calculation)
 >This part of code was written in the file name  **"delete_line_ntimes.m"**
->>Based on the previous code, I have the seam at the moment. That is, cascade all the pixels except the pixels that are the lowest-energy pixel of each row.   
+>>Based on the previous code, I have the seam at the moment. That is, cascade all the pixels except the pixels that are the lowest-energy pixel of each row.  
+
+### Delete the seam N times (forward energy calculation)
+
+### Delete the seam N times horizontally and vertically (forward energy calculation) 
+
+### Preserve part of the image while seam carving (forward energy calculation)
+
+### Reserve part of the image while seam carving (forward energy calculation)
+
+### Reserve one part completely while seam carving (forward energy calculation)
+
+
 
 
 
