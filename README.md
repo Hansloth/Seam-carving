@@ -15,7 +15,7 @@ see [Wikipedia](https://en.wikipedia.org/wiki/Seam_carving)
 * Final image.
 
 
-## What are seams?
+### What are seams?
 
 >Seams can be either vertical or horizontal. A vertical seam is a path of pixels connected from top to bottom in an image with one pixel in each row. A horizontal seam is similar with the exception of the connection being from left to right. The importance/energy function values a pixel by measuring its contrast with its neighbor pixels.
 
