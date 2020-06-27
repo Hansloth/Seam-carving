@@ -28,21 +28,21 @@ see [Wikipedia](https://en.wikipedia.org/wiki/Seam_carving)
 
 ### Find the seam (backward energy calculation)
 >This part of code was written in the file named **"find_delete_line.m"**
->>Based on the procedure of seam carving mentioned above. First I start with an picture "penguins.jpg".
+>>Based on the procedure of seam carving mentioned above. First I start with the picture "penguins.jpg".
 >>>Secondly, I use gradient magnitude to calculate the energy of the picture.
 >>>>Thirdly, I have to find out the recursion relation of the picture's gradient magnitude.
 M(i, j)= E(i, j) + min(M(i −1, j −1),M(i −1, j),M(i −1, j +1))
 >>>>>The fifth step is to backtrack(backward energy calculation) the lowest-energy pixel of each row
 >>>>>>The last step is to set the pixels which we backtracked in the last step into red.
 
-### Delete the seam n times (backward energy calculation)
+### Delete the seam N times (backward energy calculation)
 >This part of code was written in the file name  **"delete_line_ntimes.m"**
 >>Based on the previous code, I have the seam at the moment. That is, cascade all the pixels except the pixels that are the lowest-energy pixel of each row.  
 
 ### Delete the seam N times (forward energy calculation)
 see [What is forward energy seam carving?](https://avikdas.com/2019/07/29/improved-seam-carving-with-forward-energy.html)
 >This part of code was written in the file name  **"delete_line_forward_energy.m"**
->>First I start with an picture "penguins.jpg".
+>>First I start with the picture "penguins.jpg".
 >>>Secondly, I use gradient magnitude to calculate the energy of the picture.
 >>>>Thirdly, I use forward energy method to calculate the picture's gradient magnitude.
 >>>>
@@ -51,8 +51,8 @@ see [What is forward energy seam carving?](https://avikdas.com/2019/07/29/improv
 >>>>CU(x,y)=D[(x−1,y),(x+1,y)]
 >>>>
 >>>>CR(x,y)=D[(x−1,y),(x+1,y)]+D[(x,y−1),(x+1,y)]
->>>>>The fifth step is to find(forward energy calculation) the lowest-energy pixel of each row
->>>>>>The last step is to set the pixels which we find was the smallest in the row, in the last step, into red and delete it.
+>>>>>The forth step is to find(forward energy calculation) the lowest-energy pixel of each row.
+>>>>>>The last step is to set the pixels which we find was the smallest in the row into red and delete it.
 
 ### Delete the seam N times horizontally and vertically (backward energy calculation)
 >This part of code was written in the file name  **"delete_line_VH.m"**.
@@ -60,12 +60,26 @@ In this section seam are calculated and deleted horizontally and vertically
 
 ### Preserve part of the image while seam carving (backward energy calculation)
 >This part of code was written in the file name  **"delete_line_preserve.m"**.
+>>First I start with the picture "penguins.jpg".
+>>>Secondly, I use gradient magnitude to calculate the energy of the picture.
+>>>>Thirdly, I select a part of the picture to preserve. Later on set that portion's gradient magnitude energy very **high**.
+>>>>The forth step, I use forward energy method to calculate the picture's gradient magnitude.
+>>>>>The forth step is to find(forward energy calculation) the lowest-energy pixel of each row.
+>>>>>>The last step is to set the pixels which we find was the smallest in the row into red and delete it.
 
 ### Reserve part of the image while seam carving (backward energy calculation)
 >This part of code was written in the file name  **"delete_line_reserve.m"**.
+>This part of code was written in the file name  **"delete_line_preserve.m"**.
+>>First I start with the picture "penguins.jpg".
+>>>Secondly, I use gradient magnitude to calculate the energy of the picture.
+>>>>Thirdly, I select a part of the picture to preserve. Later on set that portion's gradient magnitude energy very **low**.
+>>>>The forth step, I use forward energy method to calculate the picture's gradient magnitude.
+>>>>>The forth step is to find(forward energy calculation) the lowest-energy pixel of each row.
+>>>>>>The last step is to set the pixels which we find was the smallest in the row into red and delete it.
 
 ### Reserve part of the image completely while seam carving (backward energy calculation)
 >This part of code was written in the file name  **"delete_line_complete_reserve.m"**.
+
 
 
 
