@@ -62,7 +62,7 @@ In this section seam are calculated and deleted horizontally and vertically
 >This part of code was written in the file name  **"delete_line_preserve.m"**.
 >>First I start with the picture "penguins.jpg".
 >>>Secondly, I use gradient magnitude to calculate the energy of the picture.
->>>>Thirdly, I select a part of the picture to preserve. Later on set that portion's gradient magnitude energy very **high**.
+>>>>Thirdly, I select a part of the picture to preserve. Later on set that portion's gradient magnitude energy **very high**.
 >>>>The forth step, I use forward energy method to calculate the picture's gradient magnitude.
 >>>>>The forth step is to find(forward energy calculation) the lowest-energy pixel of each row.
 >>>>>>The last step is to set the pixels which we find was the smallest in the row into red and delete it.
@@ -72,7 +72,7 @@ In this section seam are calculated and deleted horizontally and vertically
 >This part of code was written in the file name  **"delete_line_preserve.m"**.
 >>First I start with the picture "penguins.jpg".
 >>>Secondly, I use gradient magnitude to calculate the energy of the picture.
->>>>Thirdly, I select a part of the picture to preserve. Later on set that portion's gradient magnitude energy very **low**.
+>>>>Thirdly, I select a part of the picture to preserve. Later on set that portion's gradient magnitude energy **very low**.
 >>>>The forth step, I use forward energy method to calculate the picture's gradient magnitude.
 >>>>>The forth step is to find(forward energy calculation) the lowest-energy pixel of each row.
 >>>>>>The last step is to set the pixels which we find was the smallest in the row into red and delete it.
