@@ -40,6 +40,14 @@ M(i, j)= E(i, j) + min(M(i −1, j −1),M(i −1, j),M(i −1, j +1))
 >>Based on the previous code, I have the seam at the moment. That is, cascade all the pixels except the pixels that are the lowest-energy pixel of each row.  
 
 ### Delete the seam N times (forward energy calculation)
+see [What is forward energy seam carving?](https://avikdas.com/2019/07/29/improved-seam-carving-with-forward-energy.html)
+>This part of code was written in the file name  **"delete_line_forward_energy.m"**
+>>First I start with an picture "penguins.jpg".
+>>>Secondly, I use gradient magnitude to calculate the energy of the picture.
+>>>>Thirdly, I use forward energy method to calculate the picture's gradient magnitude.
+CL(x,y)CU(x,y)CR(x,y)=D[(x−1,y),(x+1,y)]+D[(x,y−1),(x−1,y)]=D[(x−1,y),(x+1,y)]=D[(x−1,y),(x+1,y)]+D[(x,y−1),(x+1,y)]
+>>>>>The fifth step is to find(forward energy calculation) the lowest-energy pixel of each row
+>>>>>>The last step is to set the pixels which we backtracked in the last step into red and delete it.
 
 ### Delete the seam N times horizontally and vertically (backward energy calculation)
 
