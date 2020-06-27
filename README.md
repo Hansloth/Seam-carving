@@ -19,19 +19,20 @@ see [Wikipedia](https://en.wikipedia.org/wiki/Seam_carving)
 
 >Seams can be either vertical or horizontal. A vertical seam is a path of pixels connected from top to bottom in an image with one pixel in each row. A horizontal seam is similar with the exception of the connection being from left to right. The importance/energy function values a pixel by measuring its contrast with its neighbor pixels.
 
-## Introduction of my code
+## Introduction of my project
 
 >### Data picture
 In this project, I use the picture "penguins.jpg", which you can download from this project's Github page.
 
 >### Find the seam
-This part of code are writen in the file named "find_delete_line"
+This part of code was writen in the file named **"find_delete_line.m"**
 >>Based on the procedure of seam carving mentioned above. First I start with an picture "penguins.jpg".
 >>>Secondly, I use gradient magnitude to calculate the energy of the picture.
 >>>>Thirdly, I have to find out the recursion relation of the picture's gradient magnitude.
 M(i, j)= E(i, j) + min(M(i −1, j −1),M(i −1, j),M(i −1, j +1))
 >>>>>The fifth step is to backtrack the lowest-energy pixel of each row
->>>>>>The last step is to set the pixels which we backtracked in the last step red.
+>>>>>>The last step is to set the pixels which we backtracked in the last step into red.
+
 
 
 
