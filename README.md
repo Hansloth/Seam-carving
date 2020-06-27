@@ -47,7 +47,7 @@ M(i, j)= E(i, j) + min(M(i −1, j −1),M(i −1, j),M(i −1, j +1))
 
 ### Reserve part of the image while seam carving (backward energy calculation)
 
-### Reserve one part completely while seam carving (backward energy calculation)
+### Reserve part of the image completely while seam carving (backward energy calculation)
 
 
 
