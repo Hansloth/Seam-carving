@@ -27,11 +27,12 @@ see [Wikipedia](https://en.wikipedia.org/wiki/Seam_carving)
 
 ### Data picture
 >In this project, I use the picture "penguins.jpg", which you can download from this project's Github page.
-![image](https://github.com/Hansloth/Seam-carving/blob/master/penguins.jpg)
+>![image](https://github.com/Hansloth/Seam-carving/blob/master/penguins.jpg)
 ### Find the seam (backward energy calculation)
 >This part of code was written in the file named **"find_delete_line.m"**
 >>Based on the procedure of seam carving mentioned above. First I start with the picture "penguins.jpg".
 >>>Secondly, I use gradient magnitude to calculate the energy of the picture.
+>>>![image](https://github.com/Hansloth/Seam-carving/blob/master/picture%20used%20in%20readme/gradient%20magnitude.jpg)
 >>>>Thirdly, I have to find out the recursion relation of the picture's gradient magnitude.
 >>>>
 >>>>M(i, j)= E(i, j) + min(M(i −1, j −1),M(i −1, j),M(i −1, j +1))
